@@ -1,0 +1,63 @@
+.navbar {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-left ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.navbar-left ul li {
+  cursor: pointer;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icons {
+  height: 40px;
+  width: 40px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  cursor: pointer;
+}
+
+
+.profile-img {
+  height: 40px;
+  width: 40px;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 55px;
+  right: 0;
+  font-size: 15px;
+  text-decoration: underline;
+  white-space: nowrap;
+}
+
+/* ✅ FIX: show on hover */
+.profile:hover .dropdown {
+  display: block;
+}
