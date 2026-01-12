@@ -3,12 +3,14 @@
   display: flex;
   justify-content: space-between;
   z-index: 1;
+  position: absolute;
+  background: transparent;
 }
 
 .navbar-left {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
 }
 
 .navbar-left ul {
@@ -22,8 +24,10 @@
 }
 
 .navbar-right {
+
+  margin-left: 40%;
   display: flex;
-  gap: 20px;
+  gap: 50px;
   align-items: center;
   cursor: pointer;
 }
@@ -36,7 +40,7 @@
 .profile {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 50px;
   position: relative;
   cursor: pointer;
 }
@@ -57,7 +61,7 @@
   white-space: nowrap;
 }
 
-/* ✅ FIX: show on hover */
+
 .profile:hover .dropdown {
   display: block;
 }
